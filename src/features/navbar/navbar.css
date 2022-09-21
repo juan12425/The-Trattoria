@@ -1,0 +1,17 @@
+nav{
+    background: rgba(42, 83, 119, 0.61);
+    padding: 1rem 0;    
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,22 @@
+#banner-div{
+    height: 100vh;
+    background-image: url("../../images/pexels-pixabay-315755.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#div-banner-title
+{
+    background: #dae0e361;
+    width: 100%;
+    padding: 1rem;
+}
+
+#div-banner-title h1{
+    font-size: 3.5rem;
+    text-align: center;
+}
