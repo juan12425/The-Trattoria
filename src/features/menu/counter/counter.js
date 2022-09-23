@@ -1,36 +1,41 @@
 import {selectDisheById, modifyCount} from "../menu-slice";
 import { useSelector, useDispatch } from "react-redux";
+import {useState} from "react";
 
 export function Counter(props){
 
+    
     const dispatch=useDispatch();
     const id=props.id;
     const dish=useSelector(state=>selectDisheById(state, id));
     const selected=dish.selected;
     const count=dish.selected;
-
+    const [newCount, setNewCount]=useState(count);
     
     const reduceSelected = () => {
-        if(count > 0)
+        if(newCount > 0)
         {
-            let newCount=count-1;
-            dispatch(modifyCount({id:id, changes:{selected: newCount}}))
+             setNewCount((prevCount)=>prevCount-1)
         }  
     }
 
     const addSelected = () => {
-        if(count >= 0 && count <10)
+        if(newCount >= 0 && newCount <10)
         {
-            let newCount=count+1;
-            dispatch(modifyCount({id:id, changes:{selected: newCount}}))
+            setNewCount((prevCount)=>prevCount+1)
         }
     }
 
+    const dispatchNewCount = () => {
+        dispatch(modifyCount({id:id, changes:{selected: newCount}}))
+    }
  
     
     return(<div>
         <button onClick={reduceSelected}>-</button>
-        <span>{selected}</span>
+        <span>{newCount}</span>
         <button onClick={addSelected}>+</button>
+
+        <button onClick={dispatchNewCount}>Add to Cart</button>
     </div>)
 }
