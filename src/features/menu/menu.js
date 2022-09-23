@@ -2,7 +2,8 @@ import {retreiveMenu, selectStatus} from "./menu-slice";
 import {useEffect} from "react";
 import { Dish } from "./dish/dish";
 import { useDispatch, useSelector } from "react-redux";
-import { dishes } from "./default-dishes";
+import {selectAllDishes} from "./menu-slice";
+
 import "./menu.css";
 
 export function Menu()
@@ -15,17 +16,18 @@ export function Menu()
     
     
     const status=useSelector(selectStatus);
-    
+    const dishes=useSelector(selectAllDishes);
     
 
     return (<div>
         <h2 className="section-title">Menu</h2>
         <div id="dishes-container">
             {dishes.map((dish, index)=>{
-                return <Dish title={dish.title} description={dish.description} src={dish.src} key={index} />    
-            })}
-            {status == "loading" && <p className="loading-message">Loading Menu...</p>}
+                return <Dish id={dish.id} title={dish.title} description={dish.description} src={dish.img_name} key={index} />    
+            })
+            }  
         </div>
+        {status == "loading" && <p className="loading-message">Loading Menu...</p>}
     </div>)
  
 }
