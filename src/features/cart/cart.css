@@ -1,0 +1,13 @@
+#cart-img{
+    display: block;
+    width: 30px;
+    height: auto;
+}
+
+a{
+    display: flex;
+}
+
+a span{
+    align-self: flex-end;
+}

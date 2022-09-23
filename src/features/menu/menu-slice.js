@@ -19,7 +19,7 @@ const menuSlice=createSlice({
     name: "menu",
     initialState,
     reducers : {
-        modifyCount: menuAdapter.updateOne  
+        modifyCount: menuAdapter.updateOne, 
     },
     extraReducers: (builder) => {
         builder.addCase(retreiveMenu.pending, (state)=>{
@@ -31,8 +31,14 @@ const menuSlice=createSlice({
     }
 });
 
+export const getTotalCount = dishes => {
+    let totalSelected=0;
+    dishes.forEach(dish => totalSelected+=dish.selected);
+    return totalSelected;
+}
+
 export const {modifyCount}=menuSlice.actions;
 export const selectStatus= state => state.menu.status;
-export const { selectAll: selectAllDishes, selectById: selectDisheById }=menuAdapter.getSelectors(state => state.menu   );
+export const { selectAll: selectAllDishes, selectById: selectDisheById }=menuAdapter.getSelectors(state => state.menu);
 
 export default menuSlice.reducer;

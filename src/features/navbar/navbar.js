@@ -1,4 +1,5 @@
 import "./navbar.css";
+import { Cart } from "../cart/cart";
 
 export function NavBar(){
     return(
@@ -8,6 +9,7 @@ export function NavBar(){
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Book a Table</a></li>
                 <li><a href="#">Contact</a></li>
+                <Cart/>
             </ul>
         </nav>
     );
