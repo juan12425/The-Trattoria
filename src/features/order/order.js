@@ -20,6 +20,7 @@ export function Order()
 
     const preventSubmit=(event)=>{
         event.preventDefault();
+        
         setEmail("");
         setCellPhone("");
         setAddress("");
