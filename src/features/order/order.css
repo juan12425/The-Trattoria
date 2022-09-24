@@ -22,6 +22,7 @@
     display: flex;
     margin-top: 1rem;
     background: white;
+    flex-wrap: wrap;
     
 }
 
@@ -36,7 +37,7 @@
 #complete-order-button{
     margin: 1rem auto 0;
     display: block;
-    background: green;
+    background: #000;
     border: none;
     border-radius: 10px;
     color: white;
@@ -64,5 +65,13 @@ form input{
 #delivery-title{
     text-align: center;
     padding: 1rem;
-    background: #0000000a;
+    background: rgb(255, 215, 0);
+}
+
+@media only screen and (max-width:800px){
+    .suborder-div img{
+        width: 100%;
+        margin: 0 auto;
+        
+    }
 }

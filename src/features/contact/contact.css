@@ -1,0 +1,12 @@
+#contact-div{
+    background: #397ab317;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+#contact-div div{
+    background: white;
+    padding: 2rem;
+}
