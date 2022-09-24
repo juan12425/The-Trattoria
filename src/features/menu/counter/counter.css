@@ -1,0 +1,23 @@
+#div-reduce-add-buttons
+{
+    margin: 0 10px;
+}
+
+#div-reduce-add-buttons button, .button-background-red{
+    background: black;
+    color: white;
+    border: none;
+    margin: 0 10px;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.dispatch-selected
+{
+    background: green !important;
+}
+
+.button-background-red
+{
+    background: red;
+}

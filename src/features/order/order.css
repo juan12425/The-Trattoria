@@ -1,0 +1,67 @@
+.order-image{
+    display: block;
+    width: 20%;
+    height: auto;
+    margin-right: 1rem;
+}
+
+#order-div{
+    width: 80%;
+    margin: 1rem auto;
+    background:#acb7b229;
+    padding: 2rem;
+    
+}
+
+#order-div h2{
+    width: 100%;
+}
+
+.suborder-div{
+    display: flex;
+    margin-top: 1rem;
+    background: white;
+    
+}
+
+.remove-button{
+    background: red;
+    margin-bottom: 1rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+#complete-order-button{
+    margin: 1rem auto 0;
+    display: block;
+    background: green;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+form input{
+    width: 90%;
+    margin: 0.5rem auto;
+    border: 1px #c7c6c6 solid;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+#delivery-title{
+    text-align: center;
+    padding: 1rem;
+    background: #0000000a;
+}
