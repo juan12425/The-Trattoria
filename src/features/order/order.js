@@ -39,7 +39,7 @@ export function Order()
                 
                 return(<div  className="suborder-div" key={index}>
                     <img className="order-image" src={require("../../images/"+dishImgName)}/>
-                    <div>
+                    <div class="order-dish-info">
                         <h3>{dishTitle}</h3>
                         <p>Quantity: {dishSelected}</p>
                         <p>Price: ${price}</p>
