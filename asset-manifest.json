@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/The-Trattoria/static/css/main.b784bd95.css",
+    "main.js": "/The-Trattoria/static/js/main.aa4ddcfc.js",
+    "static/js/787.26da9b02.chunk.js": "/The-Trattoria/static/js/787.26da9b02.chunk.js",
+    "static/media/pizza2.jpg": "/The-Trattoria/static/media/pizza2.a5a14ced99b0045e6906.jpg",
+    "static/media/pexels-pixabay-315755.jpg": "/The-Trattoria/static/media/pexels-pixabay-315755.0331bf77b93690a030b2.jpg",
+    "static/media/pasta-carbonara.jpg": "/The-Trattoria/static/media/pasta-carbonara.d91eb37223000a509dfe.jpg",
+    "static/media/arancini.jpg": "/The-Trattoria/static/media/arancini.f4b3f6ed3a07baa5c8f9.jpg",
+    "static/media/pizza-mar.jpg": "/The-Trattoria/static/media/pizza-mar.a574224d0e13e8a9e64d.jpg",
+    "static/media/sp-cart.png": "/The-Trattoria/static/media/sp-cart.f8baf13abd192652e52f.png",
+    "index.html": "/The-Trattoria/index.html",
+    "main.b784bd95.css.map": "/The-Trattoria/static/css/main.b784bd95.css.map",
+    "main.aa4ddcfc.js.map": "/The-Trattoria/static/js/main.aa4ddcfc.js.map",
+    "787.26da9b02.chunk.js.map": "/The-Trattoria/static/js/787.26da9b02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b784bd95.css",
+    "static/js/main.aa4ddcfc.js"
+  ]
+}
