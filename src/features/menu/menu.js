@@ -1,4 +1,4 @@
-import {retreiveMenu, selectStatus} from "./menu-slice";
+import {retrieveMenu, selectStatus} from "./menu-slice";
 import {useEffect} from "react";
 import { Dish } from "./dish/dish";
 import { useDispatch, useSelector } from "react-redux";
@@ -11,7 +11,7 @@ export function Menu()
     const dispatch=useDispatch();
 
     useEffect(()=>{
-        dispatch(retreiveMenu());
+        dispatch(retrieveMenu());
     },[])
     
     

@@ -1,7 +1,7 @@
 import {createAsyncThunk, createSlice, createEntityAdapter} from "@reduxjs/toolkit";
 import {dishes} from "./default-dishes";
 
-export const retreiveMenu=createAsyncThunk("menu/FetchRecipes", async () =>{
+export const retrieveMenu=createAsyncThunk("menu/FetchRecipes", async () =>{
     const responseJSON = await fetch("http://localhost:8000/API/dishesAPI");
     const response=await responseJSON.json();
     return response;
@@ -22,9 +22,9 @@ const menuSlice=createSlice({
         modifyCount: menuAdapter.updateOne, 
     },
     extraReducers: (builder) => {
-        builder.addCase(retreiveMenu.pending, (state)=>{
+        builder.addCase(retrieveMenu.pending, (state)=>{
             state.status = "loading";
-        }).addCase(retreiveMenu.fulfilled, (state, action) =>{
+        }).addCase(retrieveMenu.fulfilled, (state, action) =>{
             state.status = "idle";
             menuAdapter.addMany(state, action.payload);
         })
