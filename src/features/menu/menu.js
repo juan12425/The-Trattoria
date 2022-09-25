@@ -20,10 +20,10 @@ export function Menu()
     
 
     return (<div>
-        <h2 className="section-title">Menu</h2>
+        <h2 id="menu-title"className="section-title">Menu</h2>
         <div id="dishes-container">
             {dishes.map((dish, index)=>{
-                return <Dish id={dish.id} title={dish.title} description={dish.description} src={dish.img_name} key={index} />    
+                return <Dish id={dish.id} title={dish.title} description={dish.description} src={dish.img_name} key={index} price={dish.price} />    
             })
             }  
         </div>

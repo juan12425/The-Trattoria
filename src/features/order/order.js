@@ -11,7 +11,7 @@ export function Order()
     const [email, setEmail]=useState("");
     const [cellPhone, setCellPhone]=useState("");
     const [address, setAddress]=useState("");
-
+    let totalPrice=0;
 
     const deletePlate=({target})=>{
         const id=target.value;
@@ -33,17 +33,22 @@ export function Order()
                 const dishSelected=dish.selected;
                 const dishImgName=dish.img_name;
                 const id=dish.id;
-
+                const pricePerDish=dish.price;
+                const price=pricePerDish*dishSelected;
+                totalPrice+=price;
+                
                 return(<div  className="suborder-div" key={index}>
                     <img className="order-image" src={require("../../images/"+dishImgName)}/>
                     <div>
                         <h3>{dishTitle}</h3>
                         <p>Quantity: {dishSelected}</p>
+                        <p>Price: ${price}</p>
                         <button className="remove-button" value={id} onClick={deletePlate}>Remove</button>
                     </div>
                 </div>
                 )
             })}
+            <p>Total: ${totalPrice}</p>
             {selectedDishes.length > 0 && <div>
                     <h3 id="delivery-title">Delivery Information</h3>
                     <form onSubmit={preventSubmit}>

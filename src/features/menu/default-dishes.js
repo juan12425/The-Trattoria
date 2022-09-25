@@ -8,8 +8,8 @@ export const dishes={0:{
     Vestibulum blandit sem sed ligula pulvinar, et sollicitudin felis ornare.
      Curabitur consectetur in justo facilisis porta`,
     img_name: "pizza-mar.jpg",
-
     selected: 0,
+    price: 30
 },1:{
 
     id:1,
@@ -22,6 +22,7 @@ export const dishes={0:{
      Curabitur consectetur in justo facilisis porta`,   
     img_name: "pasta-carbonara.jpg",
     selected: 0,
+    price: 20
 },
 2:{
     id: 2,
@@ -34,6 +35,7 @@ export const dishes={0:{
      Curabitur consectetur in justo facilisis porta`,
     img_name: "arancini.jpg",
     selected: 0,
+    price:10
 },
 3:{
     id: 3,
@@ -46,4 +48,5 @@ export const dishes={0:{
      Curabitur consectetur in justo facilisis porta`,
     img_name: "pizza2.jpg",
     selected: 0,
+    price: 20
 }};
